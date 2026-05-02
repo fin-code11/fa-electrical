@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="none">
+  <!-- Orange circle background -->
+  <circle cx="40" cy="40" r="38" fill="#E07820"/>
+  <!-- Inner dark ring -->
+  <circle cx="40" cy="40" r="33" fill="#1a1a1a"/>
+  <!-- Inner orange fill -->
+  <circle cx="40" cy="40" r="28" fill="#E07820"/>
+
+  <!-- Plug body (rounded rect) -->
+  <rect x="28" y="34" width="24" height="20" rx="5" fill="#1a1a1a"/>
+  <!-- Prong holes -->
+  <rect x="33" y="39" width="5" height="6" rx="2" fill="#E07820"/>
+  <rect x="42" y="39" width="5" height="6" rx="2" fill="#E07820"/>
+  <!-- Top prongs -->
+  <rect x="33" y="22" width="4" height="13" rx="2" fill="#1a1a1a"/>
+  <rect x="43" y="22" width="4" height="13" rx="2" fill="#1a1a1a"/>
+  <!-- Bottom cord -->
+  <rect x="38" y="54" width="4" height="9" rx="2" fill="#1a1a1a"/>
+
+  <!-- "F&A Electrical" in white -->
+  <text x="90" y="34" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">F&amp;A Electrical</text>
+  <!-- "Contractors" in white -->
+  <text x="90" y="58" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">Contractors</text>
+  <!-- "inc" in orange -->
+  <text x="218" y="58" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#E07820">inc</text>
+</svg>

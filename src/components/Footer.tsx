@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,20 +8,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="relative w-9 h-9 flex items-center justify-center">
-                <div className="absolute inset-0 bg-orange-500 rounded-sm rotate-45" />
-                <span className="relative z-10 text-white font-black text-xs">F&A</span>
-              </div>
-              <div>
-                <p className="font-black text-white text-base leading-tight">
-                  F<span className="text-orange-500">&</span>A Electrical
-                </p>
-                <p className="text-[10px] text-orange-400/70 tracking-[0.2em] uppercase">Licensed & Insured</p>
-              </div>
+            <div className="mb-4">
+              <Image
+                src="/logo.svg"
+                alt="F&A Electrical Contractors Inc"
+                width={180}
+                height={50}
+                className="h-10 w-auto opacity-80"
+              />
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
-              Delivering precision electrical solutions for residential and commercial clients.
+              Delivering precision electrical solutions for residential, commercial, and industrial clients.
             </p>
           </div>
 
@@ -31,7 +29,6 @@ export default function Footer() {
               {[
                 { href: "/", label: "Home" },
                 { href: "/services", label: "Services" },
-                { href: "/team", label: "Team" },
                 { href: "/contact", label: "Contact Us" },
               ].map((link) => (
                 <li key={link.href}>

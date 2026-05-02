@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navLinks = [
   { href: "/services", label: "Services" },
-  { href: "/team", label: "Team" },
   { href: "/contact", label: "Contact Us" },
 ];
 
@@ -19,19 +19,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 flex items-center justify-center">
-              <div className="absolute inset-0 bg-orange-500 rounded-sm rotate-45 group-hover:rotate-[52deg] transition-transform duration-300" />
-              <span className="relative z-10 text-white font-black text-sm leading-none">F&A</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-black text-white text-lg leading-tight tracking-wide">
-                F<span className="text-orange-500">&</span>A
-              </span>
-              <span className="text-[10px] text-orange-400/80 tracking-[0.2em] uppercase font-medium -mt-0.5">
-                Electrical
-              </span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/logo.svg"
+              alt="F&A Electrical Contractors Inc"
+              width={200}
+              height={56}
+              priority
+              className="h-11 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-200"
+            />
           </Link>
 
           {/* Desktop nav */}

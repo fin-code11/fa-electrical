@@ -67,6 +67,36 @@ const services = [
     ],
   },
   {
+    category: "Industrial",
+    icon: "🏭",
+    items: [
+      {
+        title: "Industrial Panel & MCC Installation",
+        desc: "Design and installation of motor control centres, distribution panels, and high-voltage switchgear for manufacturing and processing facilities.",
+      },
+      {
+        title: "Plant & Facility Wiring",
+        desc: "Full electrical infrastructure for warehouses, production plants, and industrial facilities — from service entrance to machine connections.",
+      },
+      {
+        title: "Motor & Drive Connections",
+        desc: "Wiring and commissioning of motors, variable frequency drives (VFDs), and automated machinery for industrial operations.",
+      },
+      {
+        title: "High-Voltage Systems",
+        desc: "Installation, maintenance, and testing of medium and high-voltage electrical systems up to 27.6 kV.",
+      },
+      {
+        title: "Industrial Lighting",
+        desc: "High-bay LED lighting installations, hazardous location fixtures, and energy-efficient lighting retrofits for large-scale facilities.",
+      },
+      {
+        title: "Preventive Maintenance Programs",
+        desc: "Scheduled inspection and maintenance programs for industrial electrical systems — minimising downtime and extending equipment life.",
+      },
+    ],
+  },
+  {
     category: "Maintenance & Repairs",
     icon: "🔧",
     items: [
@@ -108,7 +138,7 @@ export default function ServicesPage() {
             Our <span className="text-orange-400">Services</span>
           </h1>
           <p className="max-w-xl mx-auto text-white/50 text-lg">
-            From single outlets to full commercial builds — we handle every scope of electrical work
+            From single outlets to full industrial facilities — we handle every scope of electrical work
             with the same commitment to quality and code compliance.
           </p>
         </div>
