@@ -122,7 +122,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen pt-20">
       {/* Header */}
       <section className="relative py-24 overflow-hidden grid-bg">
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/0 to-black pointer-events-none" />
