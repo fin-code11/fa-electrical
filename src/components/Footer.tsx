@@ -9,13 +9,15 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-4">
-              <Image
-                src="/logo.svg"
-                alt="F&A Electrical Contractors Inc"
-                width={180}
-                height={50}
-                className="h-10 w-auto opacity-80"
-              />
+              <div className="bg-white rounded inline-block px-3 py-1.5">
+                <Image
+                  src="/logo.png"
+                  alt="F&A Electrical Contractors Inc"
+                  width={150}
+                  height={48}
+                  className="h-8 w-auto"
+                />
+              </div>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               Delivering precision electrical solutions for residential, commercial, and industrial clients.

@@ -20,14 +20,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <Image
-              src="/logo.svg"
-              alt="F&A Electrical Contractors Inc"
-              width={200}
-              height={56}
-              priority
-              className="h-11 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-200"
-            />
+            <div className="bg-white rounded px-3 py-1.5 group-hover:opacity-90 transition-opacity duration-200">
+              <Image
+                src="/logo.png"
+                alt="F&A Electrical Contractors Inc"
+                width={150}
+                height={48}
+                priority
+                className="h-8 w-auto"
+              />
+            </div>
           </Link>
 
           {/* Desktop nav */}
