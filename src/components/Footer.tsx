@@ -17,9 +17,23 @@ export default function Footer() {
                 className="h-10 w-auto opacity-90"
               />
             </div>
-            <p className="text-white/50 text-sm leading-relaxed">
-              Delivering precision electrical solutions for residential, commercial, and industrial clients.
+            <p className="text-white/50 text-sm leading-relaxed mb-5">
+              Delivering quality electrical solutions for residential, commercial, and industrial clients across the GTA.
             </p>
+            {/* ESA Certification badge */}
+            <div className="inline-flex items-center gap-3 px-4 py-3 border border-orange-500/25 bg-orange-500/5 rounded-sm">
+              <Image
+                src="/esa-logo.svg"
+                alt="ESA Certified"
+                width={48}
+                height={24}
+                className="h-6 w-auto opacity-90"
+              />
+              <div>
+                <p className="text-white/80 text-xs font-semibold">ESA Certified</p>
+                <p className="text-white/40 text-[10px]">Lic. No. 7009205</p>
+              </div>
+            </div>
           </div>
 
           {/* Quick links */}
@@ -66,8 +80,8 @@ export default function Footer() {
         <div className="section-divider mt-10 mb-6" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-white/30 text-xs">
-          <p>© {new Date().getFullYear()} F&A Electrical. All rights reserved.</p>
-          <p>Licensed Electrical Contractor · Ontario ESA Certified</p>
+          <p>© {new Date().getFullYear()} F&A Electrical Contractors Inc. All rights reserved.</p>
+          <p>Ontario ESA Certified · Licence No. 7009205</p>
         </div>
       </div>
     </footer>

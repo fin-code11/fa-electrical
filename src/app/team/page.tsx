@@ -65,7 +65,7 @@ const values = [
 
 export default function TeamPage() {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-24">
       {/* Header */}
       <section className="relative py-24 overflow-hidden grid-bg">
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black pointer-events-none" />

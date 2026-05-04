@@ -1,12 +1,5 @@
 import Link from "next/link";
 
-const stats = [
-  { value: "15+", label: "Years Experience" },
-  { value: "500+", label: "Projects Completed" },
-  { value: "100%", label: "Licensed & Insured" },
-  { value: "24/7", label: "Emergency Service" },
-];
-
 const highlights = [
   {
     icon: "⚡",
@@ -15,8 +8,8 @@ const highlights = [
   },
   {
     icon: "🏗",
-    title: "Commercial Projects",
-    desc: "Large-scale commercial builds, office fitouts, and industrial electrical systems.",
+    title: "Commercial & Industrial",
+    desc: "Large-scale commercial builds, office fitouts, and full industrial electrical systems.",
   },
   {
     icon: "🔧",
@@ -29,7 +22,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg pt-20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg pt-24">
         {/* Background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute top-1/4 right-1/4 w-[300px] h-[300px] bg-orange-600/8 rounded-full blur-[80px] pointer-events-none" />
@@ -44,7 +37,7 @@ export default function HomePage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-400 text-xs font-medium tracking-widest uppercase animate-fade-in">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
-            Ontario ESA Certified · Licensed & Insured
+            Ontario ESA Certified · Lic. No. 7009205
           </div>
 
           {/* Heading */}
@@ -58,7 +51,7 @@ export default function HomePage() {
 
           <p className="max-w-2xl mx-auto text-white/60 text-lg sm:text-xl leading-relaxed mb-10 animate-slide-up delay-200">
             Toronto&apos;s trusted electrical contractors. From residential wiring to full commercial builds —
-            precision, reliability, and zero compromise on safety.
+            quality, reliability, and zero compromise on safety.
           </p>
 
           {/* CTAs */}
@@ -77,17 +70,13 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Stats */}
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-orange-500/10 border border-orange-500/20 rounded-sm overflow-hidden animate-fade-in delay-500">
-            {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="flex flex-col items-center py-6 px-4 bg-black/80 hover:bg-orange-500/5 transition-colors duration-300"
-              >
-                <span className="text-3xl font-black text-orange-400 glow-orange-text">{stat.value}</span>
-                <span className="text-white/50 text-xs tracking-widest uppercase mt-1">{stat.label}</span>
-              </div>
-            ))}
+          {/* Single stat */}
+          <div className="mt-20 inline-flex items-center gap-4 px-10 py-6 border border-orange-500/20 bg-black/80 rounded-sm animate-fade-in delay-500">
+            <span className="text-4xl font-black text-orange-400 glow-orange-text">20+</span>
+            <div className="text-left">
+              <p className="text-white font-bold text-sm tracking-wide">Years of Experience</p>
+              <p className="text-white/40 text-xs tracking-widest uppercase mt-0.5">Trusted Across the GTA</p>
+            </div>
           </div>
         </div>
 
@@ -105,7 +94,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <p className="text-orange-400 text-xs font-semibold tracking-[0.3em] uppercase mb-3">Why Choose Us</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">
-              Built on <span className="text-orange-400">Trust</span> & Precision
+              Built on <span className="text-orange-400">Trust</span> & Quality
             </h2>
           </div>
 

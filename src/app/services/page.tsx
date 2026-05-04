@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services | F&A Electrical",
-  description: "Explore the full range of electrical services offered by F&A Electrical — residential, commercial, industrial, and emergency.",
+  description: "Explore the full range of electrical services offered by F&A Electrical — residential, commercial, industrial, and maintenance.",
 };
 
 const services = [
@@ -37,42 +37,20 @@ const services = [
     ],
   },
   {
-    category: "Commercial",
-    icon: "🏢",
+    category: "Commercial & Industrial",
+    icon: "🏭",
     items: [
       {
         title: "Commercial Tenant Buildouts",
         desc: "Full electrical installation for retail spaces, restaurants, offices, and mixed-use commercial units.",
       },
       {
+        title: "Industrial Panel & MCC Installation",
+        desc: "Design and installation of motor control centres, distribution panels, and high-voltage switchgear for manufacturing facilities.",
+      },
+      {
         title: "Three-Phase Power",
         desc: "Installation and maintenance of three-phase electrical systems for industrial and commercial equipment.",
-      },
-      {
-        title: "Emergency & Exit Lighting",
-        desc: "Code-compliant emergency lighting and exit sign installation for commercial buildings.",
-      },
-      {
-        title: "Data & Communications Wiring",
-        desc: "Structured cabling, server room power, and low-voltage wiring for modern business infrastructure.",
-      },
-      {
-        title: "Generator Systems",
-        desc: "Standby generator installation, transfer switches, and maintenance for business continuity.",
-      },
-      {
-        title: "Electrical Inspections",
-        desc: "Pre-purchase, insurance, and ESA electrical inspections with detailed reporting.",
-      },
-    ],
-  },
-  {
-    category: "Industrial",
-    icon: "🏭",
-    items: [
-      {
-        title: "Industrial Panel & MCC Installation",
-        desc: "Design and installation of motor control centres, distribution panels, and high-voltage switchgear for manufacturing and processing facilities.",
       },
       {
         title: "Plant & Facility Wiring",
@@ -87,8 +65,24 @@ const services = [
         desc: "Installation, maintenance, and testing of medium and high-voltage electrical systems up to 27.6 kV.",
       },
       {
+        title: "Emergency & Exit Lighting",
+        desc: "Code-compliant emergency lighting and exit sign installation for commercial buildings.",
+      },
+      {
         title: "Industrial Lighting",
         desc: "High-bay LED lighting installations, hazardous location fixtures, and energy-efficient lighting retrofits for large-scale facilities.",
+      },
+      {
+        title: "Data & Communications Wiring",
+        desc: "Structured cabling, server room power, and low-voltage wiring for modern business infrastructure.",
+      },
+      {
+        title: "Generator Systems",
+        desc: "Standby generator installation, transfer switches, and maintenance for business continuity.",
+      },
+      {
+        title: "Electrical Inspections",
+        desc: "Pre-purchase, insurance, and ESA electrical inspections with detailed reporting.",
       },
       {
         title: "Preventive Maintenance Programs",
@@ -122,13 +116,12 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-24">
       {/* Header */}
       <section className="relative py-24 overflow-hidden grid-bg">
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/0 to-black pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[200px] bg-orange-500/8 rounded-full blur-[80px] pointer-events-none" />
 
-        {/* Corner decorators */}
         <div className="absolute top-8 left-6 w-6 h-6 border-t-2 border-l-2 border-orange-500/40" />
         <div className="absolute top-8 right-6 w-6 h-6 border-t-2 border-r-2 border-orange-500/40" />
 
@@ -149,7 +142,6 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
           {services.map((category) => (
             <div key={category.category}>
-              {/* Category header */}
               <div className="flex items-center gap-4 mb-10">
                 <div className="w-12 h-12 flex items-center justify-center bg-orange-500/10 border border-orange-500/30 rounded-sm text-2xl">
                   {category.icon}
@@ -160,7 +152,6 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              {/* Service grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {category.items.map((service) => (
                   <div
