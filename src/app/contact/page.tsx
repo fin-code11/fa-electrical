@@ -10,8 +10,8 @@ const contactInfo = [
   {
     icon: "✆",
     label: "Phone",
-    value: "(416) 555-0194",
-    sub: "Mon–Fri 7am–6pm · Emergency 24/7",
+    value: "+1 (519) 994-6501",
+    sub: "Mon–Fri 7am–6pm",
   },
   {
     icon: "✉",
@@ -24,12 +24,6 @@ const contactInfo = [
     label: "Service Area",
     value: "Guelph & Surrounding Area",
     sub: "Residential · Commercial · Industrial",
-  },
-  {
-    icon: "⚡",
-    label: "Emergency Line",
-    value: "(416) 555-0911",
-    sub: "Available 24 hours a day, 7 days a week",
   },
 ];
 
