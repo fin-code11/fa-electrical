@@ -19,7 +19,7 @@ const team = [
     name: "Marco R.",
     role: "Senior Electrician",
     license: "309A Licensed · 7+ Years",
-    bio: "Marco specialises in residential projects and new construction wiring. His attention to detail and clean workmanship have made him a client favourite for renovation and basement finishing projects across the GTA.",
+    bio: "Marco specialises in residential projects and new construction wiring. His attention to detail and clean workmanship have made him a client favourite for renovation and basement finishing projects across Guelph and the surrounding area.",
     specialties: ["Residential Wiring", "Basement Builds", "EV Chargers"],
   },
   {

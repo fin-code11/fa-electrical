@@ -22,7 +22,7 @@ const contactInfo = [
   {
     icon: "◈",
     label: "Service Area",
-    value: "Toronto & GTA",
+    value: "Guelph & Surrounding Area",
     sub: "Residential · Commercial · Industrial",
   },
   {

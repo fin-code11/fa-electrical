@@ -50,7 +50,7 @@ export default function HomePage() {
           </h1>
 
           <p className="max-w-2xl mx-auto text-white/60 text-lg sm:text-xl leading-relaxed mb-10 animate-slide-up delay-200">
-            Toronto&apos;s trusted electrical contractors. From residential wiring to full commercial builds —
+            Guelph&apos;s trusted electrical contractors. From residential wiring to full commercial builds —
             quality, reliability, and zero compromise on safety.
           </p>
 
@@ -75,7 +75,7 @@ export default function HomePage() {
             <span className="text-4xl font-black text-orange-400 glow-orange-text">20+</span>
             <div className="text-left">
               <p className="text-white font-bold text-sm tracking-wide">Years of Experience</p>
-              <p className="text-white/40 text-xs tracking-widest uppercase mt-0.5">Trusted Across the GTA</p>
+              <p className="text-white/40 text-xs tracking-widest uppercase mt-0.5">Trusted Across Guelph & Area</p>
             </div>
           </div>
         </div>

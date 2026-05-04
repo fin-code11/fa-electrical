@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-5">
-              Delivering quality electrical solutions for residential, commercial, and industrial clients across the GTA.
+              Delivering quality electrical solutions for residential, commercial, and industrial clients across Guelph and surrounding area.
             </p>
             {/* ESA Certification badge */}
             <div className="inline-flex items-center gap-3 px-4 py-3 border border-orange-500/25 bg-orange-500/5 rounded-sm">
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-orange-500">◈</span>
-                <span>Toronto, Ontario</span>
+                <span>Guelph, Ontario</span>
               </li>
             </ul>
           </div>
